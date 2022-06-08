@@ -1,7 +1,8 @@
 const express = require('express')
-
+require('dotenv').config()
 //express app
 const app = express()
+const DATA_URL = process.env.DATA_URL
 
 //||register view engine 
 //The view engine will automatically look at the view folder(So dont remname it. If you rename it then then use this command => "app.set('views', "changedFolderName")"
