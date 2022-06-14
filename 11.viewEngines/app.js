@@ -1,8 +1,14 @@
 const express = require('express')
 require('dotenv').config()
+const mongoose = require('mongoose')
 //express app
 const app = express()
-const DATA_URL = process.env.DATA_URL
+
+//||connect to mongoDB
+const DB_URI = process.env.DB_URI
+mongoose.connect(DB_URI)
+    .then((result) => console.log('connected to DB'))
+    .catch((err) => console.log(err))
 
 //||register view engine 
 //The view engine will automatically look at the view folder(So dont remname it. If you rename it then then use this command => "app.set('views', "changedFolderName")"
