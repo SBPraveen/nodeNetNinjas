@@ -9,6 +9,15 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
+.home-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2rem;
+    background-color:  rgb(219, 238, 254);
+    color: black;
+}
 .nav{
     /* background: red; */
     width: 100vw;

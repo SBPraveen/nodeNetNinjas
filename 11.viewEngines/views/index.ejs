@@ -7,7 +7,9 @@
         <h2>All blogs</h2>
         <% if(blogs.length > 0) { %>
             <% blogs.forEach((blog)=>{ %>
-                <h3 class="title"><%= blog.title %></h3>
+                <a class="blog-anchor" href="/blogs/<%= blog._id %>">
+                    <h3 class="title"><%= blog.title %></h3>
+                </a>
                 <p class="snippet"><%= blog.snippet %></p>
             <%}) %>
         <% } else { %>
