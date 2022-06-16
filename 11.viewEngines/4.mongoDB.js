@@ -58,4 +58,11 @@ Once the database has been created in the mongoDB Atlas(online) we need to conne
 
 ||express router
         Allows us to manage the routes(Before everything was in the app.js file using express router the routes folder was created and the routes are organized properly) more efficiently as the size of the project grows.
+
+||MVC
+MVC - Model View Controller => This is a way of structuring our code
+Here M is the model folder where we store all the routes
+     V is the view folder where we store all the ejs code
+     C is the controller folder and it forms a link between the Model and the Views folder ie it gets the data from the models and passes it to the views
+(What i understood => Controller folder basically makes the routes file smaller)
 */

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head.ejs') %>
+    <%- include('../partials/head.ejs') %>
 <body>
-    <%- include('./partials/nav.ejs') %>
+    <%- include('../partials/nav.ejs') %>
     <div class="blog-detailed">
         <h2><%= blog.title %></h2>
         <p><%= blog.body %></p>
         <!-- The data-* attribute is used to store custom data private to the page or application. -->
         <a class="delete" data-doc="<%= blog._id %>">Delete</a>
     </div>
-    <%- include('./partials/footer.ejs') %>
+    <%- include('../partials/footer.ejs') %>
   <script>
     const deleteButton = document.querySelector('a.delete')
     deleteButton.addEventListener('click', (e)=>{
